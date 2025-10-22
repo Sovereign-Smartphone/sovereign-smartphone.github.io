@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>TEEtime - Sovereign Smartphone</title><meta name="author" content="ETH Zurich - Imprint">
+    <title>TEEtime - Sovereign Smartphone</title><meta name="author" content="ETH Zurich">
 <meta name="description" content="To Enjoy Freedom We Have to Control Our Phones.">
   <meta itemprop="name" content="TEEtime">
   <meta itemprop="description" content="It’s TEEtime: A New Architecture Bringing Sovereignty to Smartphones Abstract Modern smartphones are complex systems in which control over phone resources is exercised by phone manufacturers, OS vendors, and users. These stakeholders have diverse and often competing interests. Barring some exceptions, users entrust their security and privacy to OS vendors (Android and iOS) and need to accept their constraints. Manufacturers protect their firmware and peripherals from the OS by executing in the highest privilege and leveraging dedicated CPUs and TEEs. OS vendors need to trust the highest privileged code deployed by manufacturers. This division of control over the phone is not ideal for OS vendors and is even more disadvantageous for the users. Users are generally limited in what applications they can install on their devices, in the privacy model and trust assumptions of the existing applications, and in the functionalities that applications can have. We propose TEEtime, a new smartphone architecture based on trusted execution allowing to balance the control different stakeholders exert over phones. More leveled control over the phone means that no stakeholder is more privileged than the others. In particular, TEEtime makes users sovereign over their phones: It enables them to install sensitive applications in isolated domains with protected access to selected peripherals alongside an OS. TEEtime achieves this while maintaining compatibility with the existing smartphone ecosystem and without relying on virtualization; it only assumes trust in a phone’s firmware. TEEtime is the first TEE architecture that allows isolated execution domains to gain protected and direct access to peripherals. TEEtime is based on Armv8-A and achieves peripheral isolation using a novel mechanism based on memory and interrupt controller protection. We demonstrate the feasibility of our design by implementing a prototype of TEEtime, and by running exemplary sensitive applications. Related Publications It’s TEEtime: Secure Interrupt Isolation for Normal-world Enclaves on Arm
@@ -215,7 +215,7 @@ Friederike Groschupp, Moritz Schneider, Ivan Puddu, Shweta Shinde, Srdjan Capkun
       display:grid; grid-template-columns:1fr; gap:0.85rem; max-width:1000px; margin:0 auto;
     }
     @media(min-width:700px){ .people-grid{ grid-template-columns:repeat(2,1fr); } }
-    @media(min-width:1024px){ .people-grid{ grid-template-columns:repeat(3,1fr); } }
+    @media(min-width:1260px){ .people-grid{ grid-template-columns:repeat(3,1fr); } }
 
     .person-card{
       background: var(--card-bg);
@@ -260,6 +260,7 @@ Friederike Groschupp, Moritz Schneider, Ivan Puddu, Shweta Shinde, Srdjan Capkun
       box-shadow: var(--card-shadow, 0 1px 3px rgba(0,0,0,.08));
       transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
     }
+    .person-org{ word-break: break-word; }
     .person-icons .pi:hover{
       transform: translateY(-1px);
       box-shadow: var(--card-shadow-hover, 0 6px 18px rgba(0,0,0,.12));
@@ -267,11 +268,60 @@ Friederike Groschupp, Moritz Schneider, Ivan Puddu, Shweta Shinde, Srdjan Capkun
     }
     .person-icons i{ font-size:.95rem; line-height:1; opacity:.95; }
     html.dark .person-icons .pi:hover{ border-color: rgba(255,255,255,.25); }
+
+     
+
+   
+  @media (max-width: 1560px){
+    .person-icons,
+    .person-links{
+      margin-top: -0.3rem;    
+    }
+  }
+
+   
+  @media (max-width: 1260px){
+    .person-icons,
+    .person-links{
+      margin-top: -2.0rem;
+    }
+  }
+
+   
+  @media (max-width: 1200px){
+    .person-icons,
+    .person-links{
+      margin-top: -0.2rem;
+    }
+  }
+
+   
+  @media (max-width: 700px){
+    .person-icons,
+    .person-links{
+      margin-top: -2.0rem;
+    }
+  }
+
+  @media (max-width: 420px){
+    .person-icons,
+    .person-links{
+      margin-top: 0.0rem;
+    }
+  }
+
+
+
+   
+  @media (max-width: 520px){
+    .person-icons .pi{ width:1.6rem; height:1.6rem; }
+  }
     
   </style></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">
-              <a href="/imprint/">ETH Zurich - Imprint</a></span></div></div>
+              <a href="https://ethz.ch/en.html"target="_blank" rel="external nofollow noopener noreferrer">ETH Zurich</a></span>&nbsp;-&nbsp;<a class="imprint-link" href="/imprint/" rel="nofollow">Imprint</a>
+        </div></div>
   </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
         </div></div><div id="mask"></div><noscript>
     <div class="noscript-warning">This website works best with JavaScript enabled.</div>
