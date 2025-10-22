@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Aster - Sovereign Smartphone</title><meta name="author" content="ETH Zurich - Imprint">
+<meta name="description" content="">
+  <meta itemprop="name" content="Aster">
+  <meta itemprop="description" content="Aster: Fixing the Android TEE Ecosystem with Arm CCA Abstract The Android ecosystem relies on either TrustZone (e.g., OP-TEE, QTEE, Trusty) or trusted hypervisors (pKVM, Gunyah) to isolate security-sensitive services from malicious apps and Android bugs. TrustZone allows any secure world code to access the normal world that runs Android. Similarly, a trusted hypervisor has full access to Android running in one VM and security services in other VMs. In this paper, we motivate the need for mutual isolation, wherein Android, hypervisors, and the secure world are isolated from each other. Then, we propose a sandboxed service abstraction, such that a sandboxed execution cannot access any other sandbox, Android, hypervisor, or secure world memory. We present Aster which achieves these goals while ensuring that sandboxed execution can still communicate with Android to get inputs and provide outputs securely. Our main insight is to leverage the hardware isolation offered by Arm Confidential Computing Architecture (CCA). However, since CCA does not satisfy our sandboxing and mutual isolation requirements, Aster repurposes its hardware enforcement to meet its goals while addressing challenges such as secure interfaces, virtio, and protection against interrupts. We implement Aster to demonstrate its feasibility and assess its compatibility. We take three case studies, including one currently deployed on Android phones and insufficiently secured using a trusted hypervisor, to demonstrate that they can be protected by Aster. Related Publications Aster: Fixing the Android TEE Ecosystem with Arm CCA
+Mark Kuhne, Supraja Sridhara, Andrin Bertschi, Nicolas Dutly, Srdjan Capkun, Shweta Shinde
+arxiv, 2024 Authors">
+  <meta itemprop="wordCount" content="252"><meta property="og:url" content="https://sovereign-smartphone.github.io/projects/aster/">
+  <meta property="og:site_name" content="Sovereign Smartphone">
+  <meta property="og:title" content="Aster">
+  <meta property="og:description" content="Aster: Fixing the Android TEE Ecosystem with Arm CCA Abstract The Android ecosystem relies on either TrustZone (e.g., OP-TEE, QTEE, Trusty) or trusted hypervisors (pKVM, Gunyah) to isolate security-sensitive services from malicious apps and Android bugs. TrustZone allows any secure world code to access the normal world that runs Android. Similarly, a trusted hypervisor has full access to Android running in one VM and security services in other VMs. In this paper, we motivate the need for mutual isolation, wherein Android, hypervisors, and the secure world are isolated from each other. Then, we propose a sandboxed service abstraction, such that a sandboxed execution cannot access any other sandbox, Android, hypervisor, or secure world memory. We present Aster which achieves these goals while ensuring that sandboxed execution can still communicate with Android to get inputs and provide outputs securely. Our main insight is to leverage the hardware isolation offered by Arm Confidential Computing Architecture (CCA). However, since CCA does not satisfy our sandboxing and mutual isolation requirements, Aster repurposes its hardware enforcement to meet its goals while addressing challenges such as secure interfaces, virtio, and protection against interrupts. We implement Aster to demonstrate its feasibility and assess its compatibility. We take three case studies, including one currently deployed on Android phones and insufficiently secured using a trusted hypervisor, to demonstrate that they can be protected by Aster. Related Publications Aster: Fixing the Android TEE Ecosystem with Arm CCA
+Mark Kuhne, Supraja Sridhara, Andrin Bertschi, Nicolas Dutly, Srdjan Capkun, Shweta Shinde
+arxiv, 2024 Authors">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Aster">
+  <meta name="twitter:description" content="Aster: Fixing the Android TEE Ecosystem with Arm CCA Abstract The Android ecosystem relies on either TrustZone (e.g., OP-TEE, QTEE, Trusty) or trusted hypervisors (pKVM, Gunyah) to isolate security-sensitive services from malicious apps and Android bugs. TrustZone allows any secure world code to access the normal world that runs Android. Similarly, a trusted hypervisor has full access to Android running in one VM and security services in other VMs. In this paper, we motivate the need for mutual isolation, wherein Android, hypervisors, and the secure world are isolated from each other. Then, we propose a sandboxed service abstraction, such that a sandboxed execution cannot access any other sandbox, Android, hypervisor, or secure world memory. We present Aster which achieves these goals while ensuring that sandboxed execution can still communicate with Android to get inputs and provide outputs securely. Our main insight is to leverage the hardware isolation offered by Arm Confidential Computing Architecture (CCA). However, since CCA does not satisfy our sandboxing and mutual isolation requirements, Aster repurposes its hardware enforcement to meet its goals while addressing challenges such as secure interfaces, virtio, and protection against interrupts. We implement Aster to demonstrate its feasibility and assess its compatibility. We take three case studies, including one currently deployed on Android phones and insufficiently secured using a trusted hypervisor, to demonstrate that they can be protected by Aster. Related Publications Aster: Fixing the Android TEE Ecosystem with Arm CCA
+Mark Kuhne, Supraja Sridhara, Andrin Bertschi, Nicolas Dutly, Srdjan Capkun, Shweta Shinde
+arxiv, 2024 Authors">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://sovereign-smartphone.github.io/projects/aster/" title="Aster - Sovereign Smartphone" /><link rel="alternate" type="application/rss+xml" href="https://sovereign-smartphone.github.io/projects/aster/index.xml" title="Aster - Sovereign Smartphone"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Sovereign Smartphone"><span class="header-title-text">Sovereign Smartphone</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/projects/teetime/"><i class="fa-solid fa-mug-hot fa-fw fa-sm" aria-hidden="true"></i> TEEtime</a></li><li class="menu-item active">
+              <a class="menu-link" href="/projects/aster/"><i class="fa-solid fa-sun fa-fw fa-sm" aria-hidden="true"></i> Aster</a></li><li class="menu-item">
+              <a class="menu-link" href="/showcase/"><i class="fa-solid fa-display fa-fw fa-sm" aria-hidden="true"></i> Showcase</a></li><li class="menu-item">
+              <a class="menu-link" href="/media/"><i class="fa-solid fa-newspaper fa-fw fa-sm" aria-hidden="true"></i> Media</a></li><li class="menu-item">
+              <a class="menu-link" href="/team/"><i class="fa-solid fa-people-group fa-fw fa-sm" aria-hidden="true"></i> Team</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Sovereign Smartphone"><span class="header-title-text">Sovereign Smartphone</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/projects/teetime/"><i class="fa-solid fa-mug-hot fa-fw fa-sm" aria-hidden="true"></i> TEEtime</a></li><li class="menu-item active"><a class="menu-link" href="/projects/aster/"><i class="fa-solid fa-sun fa-fw fa-sm" aria-hidden="true"></i> Aster</a></li><li class="menu-item"><a class="menu-link" href="/showcase/"><i class="fa-solid fa-display fa-fw fa-sm" aria-hidden="true"></i> Showcase</a></li><li class="menu-item"><a class="menu-link" href="/media/"><i class="fa-solid fa-newspaper fa-fw fa-sm" aria-hidden="true"></i> Media</a></li><li class="menu-item"><a class="menu-link" href="/team/"><i class="fa-solid fa-people-group fa-fw fa-sm" aria-hidden="true"></i> Team</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="fi-container"><article class="page single home">
+    
+    <section class="hero">
+      <div class="hero-inner"></div>
+    </section>
+
+    
+
+    
+    <section class="content" id="content"><!-- Optional extra copy that will appear under the cards -->
+<!-- ![Aster big picture](/images/aster.png) -->
+<p align="center">
+<img src="/images/aster.png" alt="Aster Logo" style="width:30%;">
+</p>
+<h2 class="heading-element" id="aster-fixing-the-android-tee-ecosystem-with-arm-cca"><span>Aster: Fixing the Android TEE Ecosystem with Arm CCA</span>
+  <a href="#aster-fixing-the-android-tee-ecosystem-with-arm-cca" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="details admonition abstract open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-clipboard-list" aria-hidden="true"></i>Abstract<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">The Android ecosystem relies on either TrustZone (e.g., OP-TEE, QTEE, Trusty) or trusted hypervisors (pKVM, Gunyah) to isolate security-sensitive services from malicious apps and Android bugs. TrustZone allows any secure world code to access the normal world that runs Android. Similarly, a trusted hypervisor has full access to Android running in one VM and security services in other VMs. In this paper, we motivate the need for mutual isolation, wherein Android, hypervisors, and the secure world are isolated from each other. Then, we propose a sandboxed service abstraction, such that a sandboxed execution cannot access any other sandbox, Android, hypervisor, or secure world memory. We present Aster which achieves these goals while ensuring that sandboxed execution can still communicate with Android to get inputs and provide outputs securely. Our main insight is to leverage the hardware isolation offered by Arm Confidential Computing Architecture (CCA). However, since CCA does not satisfy our sandboxing and mutual isolation requirements, Aster repurposes its hardware enforcement to meet its goals while addressing challenges such as secure interfaces, virtio, and protection against interrupts. We implement Aster to demonstrate its feasibility and assess its compatibility. We take three case studies, including one currently deployed on Android phones and insufficiently secured using a trusted hypervisor, to demonstrate that they can be protected by Aster.</div>
+  </div>
+</div>
+<h2 class="heading-element" id="related-publications"><span>Related Publications</span>
+  <a href="#related-publications" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ol>
+<li><a href="https://arxiv.org/abs/2407.16694"target="_blank" rel="external nofollow noopener noreferrer">Aster: Fixing the Android TEE Ecosystem with Arm CCA</a><br>
+Mark Kuhne, Supraja Sridhara, Andrin Bertschi, Nicolas Dutly, Srdjan Capkun, Shweta Shinde<br>
+<em>arxiv, 2024</em></li>
+</ol>
+<h2 class="heading-element" id="authors"><span>Authors</span>
+  <a href="#authors" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2></section>
+
+    <section class="people">
+        <h2 class="section-subtitle"> </h2>
+        <div class="people-grid"><div class="person-card">
+                <div class="person-head">
+                  <div class="person-avatar"><img class="person-img" src='/images/team/mark.jpg' alt="Mark Kuhne"></div>
+                  <div class="person-meta"><a class="person-name-link" href="https://mark-kuhne.com" rel="external noopener" target="_blank">
+                        <span class="person-name">Mark Kuhne</span>
+                      </a><span class="person-role">PhD Student</span><span class="person-org">ETH Zurich</span></div>
+                </div><div class="person-icons" aria-label="Contact and social links"><a href="mailto:mark.kuhne@inf.ethz.ch" class="pi" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a><a href="https://mark-kuhne.com" class="pi" title="Website" aria-label="Website" rel="me external noopener" target="_blank"><i class="fa-solid fa-globe"></i></a><a href="https://github.com/Zauney" class="pi" title="GitHub" aria-label="GitHub" rel="me external noopener" target="_blank"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/mark-kuhne/" class="pi" title="LinkedIn" aria-label="LinkedIn" rel="me external noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div></div><div class="person-card">
+                <div class="person-head">
+                  <div class="person-avatar"><img class="person-img" src='/images/team/supraja.jpg' alt="Supraja Sridhara"></div>
+                  <div class="person-meta"><a class="person-name-link" href="https://suprajas.com" rel="external noopener" target="_blank">
+                        <span class="person-name">Supraja Sridhara</span>
+                      </a><span class="person-role">PhD Student</span><span class="person-org">ETH Zurich</span></div>
+                </div><div class="person-icons" aria-label="Contact and social links"><a href="mailto:supraja.sridhara@inf.ethz.ch" class="pi" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a><a href="https://suprajas.com" class="pi" title="Website" aria-label="Website" rel="me external noopener" target="_blank"><i class="fa-solid fa-globe"></i></a><a href="https://github.com/suprajasridhara" class="pi" title="GitHub" aria-label="GitHub" rel="me external noopener" target="_blank"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/suprajasridhara/" class="pi" title="LinkedIn" aria-label="LinkedIn" rel="me external noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div></div><div class="person-card">
+                <div class="person-head">
+                  <div class="person-avatar"><img class="person-img" src='/images/team/andrin.jpg' alt="Andrin Bertschi"></div>
+                  <div class="person-meta"><a class="person-name-link" href="https://abertschi.ch/" rel="external noopener" target="_blank">
+                        <span class="person-name">Andrin Bertschi</span>
+                      </a><span class="person-role">PhD Student</span><span class="person-org">ETH Zurich</span></div>
+                </div><div class="person-icons" aria-label="Contact and social links"><a href="mailto:andrin.bertschi@inf.ethz.ch" class="pi" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a><a href="https://abertschi.ch/" class="pi" title="Website" aria-label="Website" rel="me external noopener" target="_blank"><i class="fa-solid fa-globe"></i></a><a href="https://github.com/abertschi" class="pi" title="GitHub" aria-label="GitHub" rel="me external noopener" target="_blank"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/abertschi/" class="pi" title="LinkedIn" aria-label="LinkedIn" rel="me external noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div></div><div class="person-card">
+                <div class="person-head">
+                  <div class="person-avatar"><img class="person-img" src='/images/team/nicolas.jpg' alt="Nicolas Dutly"></div>
+                  <div class="person-meta"><a class="person-name-link" href="https://syssec.ethz.ch/people/nicolas-dutly/" rel="external noopener" target="_blank">
+                        <span class="person-name">Nicolas Dutly</span>
+                      </a><span class="person-role">PhD Student</span><span class="person-org">ETH Zurich</span></div>
+                </div><div class="person-icons" aria-label="Contact and social links"><a href="mailto:nicolas.dutly@inf.ethz.ch" class="pi" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a><a href="https://syssec.ethz.ch/people/nicolas-dutly/" class="pi" title="Website" aria-label="Website" rel="me external noopener" target="_blank"><i class="fa-solid fa-globe"></i></a><a href="https://github.com/Jumpst3r" class="pi" title="GitHub" aria-label="GitHub" rel="me external noopener" target="_blank"><i class="fa-brands fa-github"></i></a></div></div><div class="person-card">
+                <div class="person-head">
+                  <div class="person-avatar"><img class="person-img" src='/images/team/srdjan.jpeg' alt="Srdjan Capkun"></div>
+                  <div class="person-meta"><a class="person-name-link" href="https://srdjan-capkun.com/" rel="external noopener" target="_blank">
+                        <span class="person-name">Srdjan Capkun</span>
+                      </a><span class="person-role">Professor</span><span class="person-org">ETH Zurich</span></div>
+                </div><div class="person-icons" aria-label="Contact and social links"><a href="mailto:srdjan.capkun@inf.ethz.ch" class="pi" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a><a href="https://srdjan-capkun.com/" class="pi" title="Website" aria-label="Website" rel="me external noopener" target="_blank"><i class="fa-solid fa-globe"></i></a><a href="https://www.linkedin.com/in/srdjan-%C4%8Dapkun-8919991/" class="pi" title="LinkedIn" aria-label="LinkedIn" rel="me external noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a href="https://x.com/SrdjanCapkun" class="pi" title="X (Twitter)" aria-label="X (Twitter)" rel="me external noopener" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div></div><div class="person-card">
+                <div class="person-head">
+                  <div class="person-avatar"><img class="person-img" src='/images/team/shweta.jpg' alt="Shweta Shinde"></div>
+                  <div class="person-meta"><a class="person-name-link" href="https://shwetashinde.com" rel="external noopener" target="_blank">
+                        <span class="person-name">Shweta Shinde</span>
+                      </a><span class="person-role">Professor</span><span class="person-org">ETH Zurich</span></div>
+                </div><div class="person-icons" aria-label="Contact and social links"><a href="mailto:shweta.shinde@inf.ethz.ch" class="pi" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a><a href="https://shwetashinde.com" class="pi" title="Website" aria-label="Website" rel="me external noopener" target="_blank"><i class="fa-solid fa-globe"></i></a><a href="https://www.linkedin.com/in/shwetasshinde24" class="pi" title="LinkedIn" aria-label="LinkedIn" rel="me external noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a href="https://x.com/shw3ta_shinde" class="pi" title="X (Twitter)" aria-label="X (Twitter)" rel="me external noopener" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div></div></div>
+      </section></article>
+
+  
+  <style>
+     
+    .hero { display:flex; justify-content:center; margin-top:2.5rem; margin-bottom:1.5rem; }
+    .hero-inner { text-align:center; }
+    .hero-logo { width:min(220px, 60vw); height:auto; display:block; margin:0 auto 0.75rem; }
+    .hero-quote { font-size:1.05rem; opacity:0.85; margin:0 auto; }
+
+     
+    .projects { padding: 0 1rem 1.5rem; }
+    .projects-grid {
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    @media(min-width: 700px) { .projects-grid { grid-template-columns: 1fr 1fr; gap: 1.25rem; } }
+
+    .project-card {
+      display:flex;
+      align-items:center;
+      gap: 0.9rem;
+      background: var(--card-background, #fff);
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,.08));
+      text-decoration:none;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .project-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md, 0 6px 18px rgba(0,0,0,.12)); }
+
+    .project-media { flex: 0 0 auto; width: 72px; height: 72px; border-radius: 0.75rem; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+    .project-logo { width:100%; height:100%; object-fit:contain; }
+     
+
+    .project-body { flex: 1 1 auto; }
+    .project-title { margin:0 0 .25rem; font-size: 1.15rem; line-height:1.2; }
+    .project-desc { margin:0; opacity:0.9; line-height:1.45; }
+
+     
+    .people{ padding: 0 1rem 1.5rem; }
+    .people .section-subtitle{
+      text-align:center; margin: 1rem 0 1rem; font-weight:700; opacity:.9;
+    }
+    .people-grid{
+      display:grid; grid-template-columns:1fr; gap:0.85rem; max-width:1000px; margin:0 auto;
+    }
+    @media(min-width:700px){ .people-grid{ grid-template-columns:repeat(2,1fr); } }
+    @media(min-width:1024px){ .people-grid{ grid-template-columns:repeat(3,1fr); } }
+
+    .person-card{
+      background: var(--card-bg);
+      border: 1px solid var(--card-border, rgba(0,0,0,.08));
+      border-radius: 0.9rem;
+      padding: 0.8rem;
+      box-shadow: var(--card-shadow, 0 1px 3px rgba(0,0,0,.08));
+    }
+
+     
+    .person-head{
+      display:flex; gap:0.9rem; align-items:flex-start;  
+      margin-bottom:0.5rem;
+    }
+    .person-avatar{
+      width:110px; height:110px;             
+      border-radius:0.6rem;                
+      overflow:hidden; flex:0 0 auto;
+    }
+    @media(max-width:420px){
+      .person-avatar{ width:72px; height:72px; }  
+    }
+    .person-img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+    .person-meta{ display:flex; flex-direction:column; min-width:0; flex:1 1 auto; }
+    .person-name{ font-weight:700; line-height:1.2; }
+    .person-name-link{ text-decoration:none; color:inherit; }
+    .person-name-link:hover .person-name{ text-decoration:underline; }
+    .person-role,.person-org{ font-size:.9rem; opacity:.8; }
+
+     
+    .person-icons,
+    .person-links{
+      display:flex; gap:0.45rem; flex-wrap:wrap; margin-top:-1.7rem;
+      justify-content:flex-end;            
+    }
+    .person-icons .pi{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:1.8rem; height:1.8rem; border-radius:999px;
+      border:1px solid var(--card-border, rgba(0,0,0,.12));
+      background: var(--card-bg);
+      box-shadow: var(--card-shadow, 0 1px 3px rgba(0,0,0,.08));
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .person-icons .pi:hover{
+      transform: translateY(-1px);
+      box-shadow: var(--card-shadow-hover, 0 6px 18px rgba(0,0,0,.12));
+      border-color: rgba(0,0,0,.18);
+    }
+    .person-icons i{ font-size:.95rem; line-height:1; opacity:.95; }
+    html.dark .person-icons .pi:hover{ border-color: rgba(255,255,255,.25); }
+    
+  </style></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">
+              <a href="/imprint/">ETH Zurich - Imprint</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config.js" defer></script><script src="/js/theme.min.js" defer></script></body>
+</html>
